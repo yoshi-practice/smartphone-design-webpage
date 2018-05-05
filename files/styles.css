@@ -791,7 +791,7 @@ span.fc-title {
     }
     div.topcontents div.topbtn a {
         display: block;
-        background: aqua;
+        background: blue;
         color: #fff;
         padding: 15px 0;
         border-radius: 10px;
@@ -807,7 +807,7 @@ span.fc-title {
         text-decoration: none;
     }
     div.topcontents div.topbtn a:hover {
-        color: aqua;
+        color: blue;
         text-decoration: none;
         background: #fce9ed;
     }
