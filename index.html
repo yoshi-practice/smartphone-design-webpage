@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://kospro.jp/yukos/ -->
+<html lang="ja" data-blockbyte-bs-uid="96601" class="gr__kospro_jp">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>PhoneLayoutSample</title>
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="./files/fontello.css">
+    <link rel="stylesheet" href="./files/responsive.css">
+    <link rel="stylesheet/less" type="text/css" href="./files/styles.less">
+
+    <script src="./files/less.min.js"></script>
+
+    <script src="./files/footerFixed.js"></script>
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+    <link rel="dns-prefetch" href="https://s.w.org/">
+    <link rel="stylesheet" id="contact-form-7-css" href="./files/styles.css" type="text/css" media="all">
+    <link rel="stylesheet" id="events-manager-css" href="./files/events_manager.css" type="text/css" media="all">
+    <script type="text/javascript" src="./files/jquery.min.js"></script>
+    <script type="text/javascript" src="./files/core.min.js"></script>
+    <script type="text/javascript" src="./files/widget.min.js"></script>
+    <script type="text/javascript" src="./files/position.min.js"></script>
+    <script type="text/javascript" src="./files/mouse.min.js"></script>
+    <script type="text/javascript" src="./files/sortable.min.js"></script>
+    <script type="text/javascript" src="./files/datepicker.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function(jQuery) {
+            jQuery.datepicker.setDefaults({
+                "closeText": "\u9589\u3058\u308b",
+                "currentText": "\u4eca\u65e5",
+                "monthNames": ["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"],
+                "monthNamesShort": ["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"],
+                "nextText": "\u6b21\u3078",
+                "prevText": "\u524d",
+                "dayNames": ["\u65e5\u66dc\u65e5", "\u6708\u66dc\u65e5", "\u706b\u66dc\u65e5", "\u6c34\u66dc\u65e5", "\u6728\u66dc\u65e5", "\u91d1\u66dc\u65e5", "\u571f\u66dc\u65e5"],
+                "dayNamesShort": ["\u65e5", "\u6708", "\u706b", "\u6c34", "\u6728", "\u91d1", "\u571f"],
+                "dayNamesMin": ["\u65e5", "\u6708", "\u706b", "\u6c34", "\u6728", "\u91d1", "\u571f"],
+                "dateFormat": "yy\/mm\/d",
+                "firstDay": 1,
+                "isRTL": false
+            });
+        });
+
+    </script>
+    <script type="text/javascript" src="./files/menu.min.js"></script>
+    <script type="text/javascript" src="./files/wp-a11y.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        var uiAutocompleteL10n = {
+            "noResults": "\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f\u3002",
+            "oneResult": "1\u4ef6\u306e\u7d50\u679c\u304c\u898b\u3064\u304b\u308a\u307e\u3057\u305f\u3002\u4e0a\u4e0b\u30ad\u30fc\u3092\u4f7f\u3063\u3066\u64cd\u4f5c\u3067\u304d\u307e\u3059\u3002",
+            "manyResults": "%d\u4ef6\u306e\u7d50\u679c\u304c\u898b\u3064\u304b\u308a\u307e\u3057\u305f\u3002\u4e0a\u4e0b\u30ad\u30fc\u3092\u4f7f\u3063\u3066\u64cd\u4f5c\u3067\u304d\u307e\u3059\u3002",
+            "itemSelected": "\u9805\u76ee\u304c\u9078\u629e\u3055\u308c\u307e\u3057\u305f\u3002"
+        };
+        //]]>
+
+    </script>
+    <script type="text/javascript" src="./files/autocomplete.min.js"></script>
+    <script type="text/javascript" src="./files/resizable.min.js"></script>
+    <script type="text/javascript" src="./files/draggable.min.js"></script>
+    <script type="text/javascript" src="./files/button.min.js"></script>
+    <script type="text/javascript" src="./files/dialog.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        var EM = {
+            "ajaxurl": "https:\/\/kospro.jp\/yukos\/sugamoto\/wp-admin\/admin-ajax.php",
+            "locationajaxurl": "https:\/\/kospro.jp\/yukos\/sugamoto\/wp-admin\/admin-ajax.php?action=locations_search",
+            "firstDay": "1",
+            "locale": "ja",
+            "dateFormat": "yy\/mm\/dd",
+            "ui_css": "https:\/\/kospro.jp\/yukos\/sugamoto\/wp-content\/plugins\/events-manager\/includes\/css\/jquery-ui.min.css",
+            "show24hours": "1",
+            "is_ssl": "1",
+            "bookingInProgress": "\u4e88\u7d04\u7533\u8fbc\u307f\u304c\u884c\u308f\u308c\u308b\u307e\u3067\u304a\u5f85\u3061\u304f\u3060\u3055\u3044\u3002",
+            "tickets_save": "\u30c1\u30b1\u30c3\u30c8\u3092\u4fdd\u5b58",
+            "bookingajaxurl": "https:\/\/kospro.jp\/yukos\/sugamoto\/wp-admin\/admin-ajax.php",
+            "bookings_export_save": "\u4e88\u7d04\u60c5\u5831\u306e\u30a8\u30af\u30b9\u30dd\u30fc\u30c8",
+            "bookings_settings_save": "\u8a2d\u5b9a\u3092\u4fdd\u5b58",
+            "booking_delete": "\u672c\u5f53\u306b\u524a\u9664\u3057\u307e\u3059\u304b ?",
+            "booking_offset": "30",
+            "bb_full": "\u58f2\u308a\u5207\u308c",
+            "bb_book": "\u3044\u307e\u3059\u3050\u4e88\u7d04",
+            "bb_booking": "\u4e88\u7d04\u7533\u8fbc\u307f\u3092\u51e6\u7406\u3057\u3066\u3044\u307e\u3059...",
+            "bb_booked": "\u4e88\u7d04\u3092\u7533\u8acb\u3057\u307e\u3057\u305f\u3002",
+            "bb_error": "\u4e88\u7d04\u30a8\u30e9\u30fc\u3067\u3059\u3002\u518d\u8a66\u884c\u3057\u307e\u3059\u304b\uff1f",
+            "bb_cancel": "\u30ad\u30e3\u30f3\u30bb\u30eb",
+            "bb_canceling": "\u30ad\u30e3\u30f3\u30bb\u30eb\u51e6\u7406\u4e2d...",
+            "bb_cancelled": "\u30ad\u30e3\u30f3\u30bb\u30eb\u6e08\u307f",
+            "bb_cancel_error": "\u30ad\u30e3\u30f3\u30bb\u30eb\u30a8\u30e9\u30fc\u3067\u3059\u3002\u518d\u8a66\u884c\u3057\u307e\u3059\u304b\uff1f",
+            "txt_search": "\u691c\u7d22",
+            "txt_searching": "\u691c\u7d22\u4e2d...",
+            "txt_loading": "\u8aad\u307f\u8fbc\u307f\u4e2d...",
+            "event_detach_warning": "\u7e70\u8fd4\u3057\u30a4\u30d9\u30f3\u30c8\u304b\u3089\u5207\u308a\u96e2\u3059\u3068\u3001\u305d\u306e\u30a4\u30d9\u30f3\u30c8\u306f\u7e70\u8fd4\u3057\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb\u304b\u3089\u9664\u5916\u3055\u308c\u3001\u72ec\u7acb\u3057\u305f\u30a4\u30d9\u30f3\u30c8\u3068\u3057\u3066\u6271\u308f\u308c\u307e\u3059\u3002\u672c\u5f53\u306b\u3053\u306e\u30a4\u30d9\u30f3\u30c8\u3092\u7e70\u8fd4\u3057\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb\u304b\u3089\u5207\u308a\u96e2\u3057\u307e\u3059\u304b?",
+            "delete_recurrence_warning": "\u672c\u5f53\u306b\u3053\u306e\u30a4\u30d9\u30f3\u30c8\u306e\u7e70\u8fd4\u3057\u3092\u5168\u524a\u9664\u3057\u3066\u3088\u308d\u3057\u3044\u3067\u3059\u304b? \u3059\u3079\u3066\u306e\u30a4\u30d9\u30f3\u30c8\u3092\u30b4\u30df\u7bb1\u3078\u79fb\u52d5\u3057\u307e\u3057\u305f\u3002",
+            "disable_bookings_warning": "\u4e88\u7d04\u6a5f\u80fd\u3092\u7121\u52b9\u306b\u3057\u3066\u300c\u66f4\u65b0\u300d\u3092\u62bc\u3059\u3068\u3001\u73fe\u5728\u306e\u4e88\u7d04\u60c5\u5831\u304c\u3059\u3079\u3066\u5931\u308f\u308c\u307e\u3059\u3002\u73fe\u5728\u4e88\u7d04\u3092\u53d7\u4ed8\u4e2d\u306e\u30a4\u30d9\u30f3\u30c8\u306e\u5834\u5408\u3001\u3053\u306e\u64cd\u4f5c\u306f\u305f\u3044\u3078\u3093\u5371\u967a\u3067\u3059\u3002\u4e88\u7d04\u60c5\u5831\u306f\u305d\u306e\u307e\u307e\u3067\u3001\u65b0\u898f\u306e\u7533\u8fbc\u3092\u5236\u9650\u3059\u308b\u306b\u306f\u3001\u30c1\u30b1\u30c3\u30c8\u306e\u300c\u5e2d\u6570\u300d\u3084\u30a4\u30d9\u30f3\u30c8\u306e\u300c\u7dcf\u5e2d\u6570\u300d\u3092\u4e88\u7d04\u6e08\u307f\u306e\u5e2d\u6570\u3088\u308a\u5c11\u306a\u304f\u8a2d\u5b9a\u3057\u76f4\u305b\u3070\u5229\u7528\u8005\u306f\u4e88\u7d04\u7533\u8fbc\u307f\u304c\u3067\u304d\u306a\u304f\u306a\u308b\u305f\u3081\u3001\u3053\u3061\u3089\u306e\u65b9\u6cd5\u304c\u304a\u3059\u3059\u3081\u3067\u3059\u3002\u672c\u5f53\u306b\u4e88\u7d04\u6a5f\u80fd\u3092\u7121\u52b9\u306b\u3057\u3066\u3088\u308d\u3057\u3044\u3067\u3059\u304b?",
+            "booking_warning_cancel": "\u672c\u5f53\u306b\u4e88\u7d04\u3092\u30ad\u30e3\u30f3\u30bb\u30eb\u3057\u3066\u3088\u3044\u3067\u3059\u304b?"
+        };
+        //]]>
+
+    </script>
+    <script type="text/javascript" src="./files/events-manager.js"></script>
+    <script src="./files/jquery.matchHeight-min.js"></script>
+    <script>
+        $(function() {
+            $('.matchHeight').matchHeight();
+        });
+
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-91883622-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <style class="blockbyte-bs-style" data-name="content">
+        body>div#blockbyte-bs-indicator>div {
+            opacity: 0;
+            pointer-events: none
+        }
+
+        body>iframe#blockbyte-bs-sidebar.blockbyte-bs-visible,
+        body>iframe#blockbyte-bs-overlay.blockbyte-bs-visible {
+            opacity: 1;
+            pointer-events: auto
+        }
+
+        body.blockbyte-bs-noscroll {
+            overflow: hidden !important
+        }
+
+        body>div#blockbyte-bs-indicator>div {
+            position: absolute;
+            transform: translate3d(-40px, 0, 0);
+            top: 0;
+            left: 0;
+            width: 40px !important;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 0 10px 10px 0;
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 2
+        }
+
+        body>div#blockbyte-bs-indicator>div>span {
+            -webkit-mask: no-repeat center/32px;
+            -webkit-mask-image: url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);
+            background-color: #ffffff;
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        body>div#blockbyte-bs-indicator[data-pos='right'] {
+            left: auto;
+            right: 0
+        }
+
+        body>div#blockbyte-bs-indicator[data-pos='right']>div {
+            transform: translate3d(40px, 0, 0);
+            left: auto;
+            right: 0;
+            border-radius: 10px 0 0 10px
+        }
+
+        body>div#blockbyte-bs-indicator.blockbyte-bs-fullHeight>div {
+            border-radius: 0
+        }
+
+        body>div#blockbyte-bs-indicator.blockbyte-bs-hover>div {
+            transform: translate3d(0, 0, 0);
+            opacity: 1
+        }
+
+        body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb {
+            height: 100% !important;
+            top: 0 !important
+        }
+
+        body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb>div {
+            background: transparent
+        }
+
+        body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb>div>span {
+            -webkit-mask-position-y: 20px
+        }
+
+        body>iframe#blockbyte-bs-sidebar {
+            width: 250px;
+            max-width: none;
+            height: 0;
+            z-index: 2147483646;
+            background-color: rgba(255, 255, 255, 0.8) !important;
+            border: none;
+            display: block !important;
+            transform: translate3d(-250px, 0, 0);
+            transition: width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s
+        }
+
+        body>iframe#blockbyte-bs-sidebar[data-pos='right'] {
+            left: auto;
+            right: 0;
+            transform: translate3d(250px, 0, 0)
+        }
+
+        body>iframe#blockbyte-bs-sidebar.blockbyte-bs-visible {
+            width: calc(100% + 250px);
+            height: 100%;
+            transform: translate3d(0, 0, 0);
+            transition: opacity 0.3s, transform 0.3s
+        }
+
+        body>iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask {
+            background: none !important
+        }
+
+        body>iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask:not(.blockbyte-bs-hover) {
+            width: calc(250px + 50px)
+        }
+
+        body>iframe#blockbyte-bs-overlay {
+            width: 100%;
+            max-width: none;
+            height: 100%;
+            z-index: 2147483647;
+            border: none;
+            background: rgba(0, 0, 0, 0.5) !important;
+            transition: opacity 0.3s
+        }
+
+    </style>
+</head>
+
+<body class="home page-template-default page page-id-16 page-top" data-gr-c-s-loaded="true">
+    <div id="logobox" class="pc" style="height: 823px;">
+        <div class="container">
+            <div class="topbox">
+                <div class="topcontents fuwafuwa">
+                    <div class="row gutters">
+                        <div class="col span_6 leftbox">
+                            <h1>Error!</h1>
+                            <p>Please access from the smartphone.</p>
+                            <div class="topbtn">
+                                <a href="https://twitter.com/yoshi1125hisa" target="_blank">Contact on Twitter</a>
+                            </div>
+                            <div class="topbtn">
+                                <a href="https://www.facebook.com/yoshi1125hisa" target="_blank">Contact on Facebook</a>
+                            </div>
+
+                            <small>Copyright Yoshihisa Kaino. All Rights Reserved.</small>
+                        </div>
+
+                        <div class="col span_6 rightbox">
+                            <script pagespeed_no_defer="">
+                                (function() {
+                                    var g = this,
+                                        h = function(b, d) {
+                                            var a = b.split("."),
+                                                c = g;
+                                            a[0] in c || !c.execScript || c.execScript("var " + a[0]);
+                                            for (var e; a.length && (e = a.shift());) a.length || void 0 === d ? c[e] ? c = c[e] : c = c[e] = {} : c[e] = d
+                                        };
+                                    var l = function(b) {
+                                        var d = b.length;
+                                        if (0 < d) {
+                                            for (var a = Array(d), c = 0; c < d; c++) a[c] = b[c];
+                                            return a
+                                        }
+                                        return []
+                                    };
+                                    var m = function(b) {
+                                        var d = window;
+                                        if (d.addEventListener) d.addEventListener("load", b, !1);
+                                        else if (d.attachEvent) d.attachEvent("onload", b);
+                                        else {
+                                            var a = d.onload;
+                                            d.onload = function() {
+                                                b.call(this);
+                                                a && a.call(this)
+                                            }
+                                        }
+                                    };
+                                    var n, p = function(b, d, a, c, e) {
+                                            this.f = b;
+                                            this.h = d;
+                                            this.i = a;
+                                            this.c = e;
+                                            this.e = {
+                                                height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
+                                                width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+                                            };
+                                            this.g = c;
+                                            this.b = {};
+                                            this.a = [];
+                                            this.d = {}
+                                        },
+                                        q = function(b, d) {
+                                            var a, c, e = d.getAttribute("pagespeed_url_hash");
+                                            if (a = e && !(e in b.d))
+                                                if (0 >= d.offsetWidth && 0 >= d.offsetHeight) a = !1;
+                                                else {
+                                                    c = d.getBoundingClientRect();
+                                                    var f = document.body;
+                                                    a = c.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop);
+                                                    c = c.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft);
+                                                    f = a.toString() + "," + c;
+                                                    b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.e.height && c <= b.e.width)
+                                                }
+                                            a && (b.a.push(e), b.d[e] = !0)
+                                        };
+                                    p.prototype.checkImageForCriticality = function(b) {
+                                        b.getBoundingClientRect && q(this, b)
+                                    };
+                                    h("pagespeed.CriticalImages.checkImageForCriticality", function(b) {
+                                        n.checkImageForCriticality(b)
+                                    });
+                                    h("pagespeed.CriticalImages.checkCriticalImages", function() {
+                                        r(n)
+                                    });
+                                    var r = function(b) {
+                                            b.b = {};
+                                            for (var d = ["IMG", "INPUT"], a = [], c = 0; c < d.length; ++c) a = a.concat(l(document.getElementsByTagName(d[c])));
+                                            if (0 != a.length && a[0].getBoundingClientRect) {
+                                                for (c = 0; d = a[c]; ++c) q(b, d);
+                                                a = "oh=" + b.i;
+                                                b.c && (a += "&n=" + b.c);
+                                                if (d = 0 != b.a.length)
+                                                    for (a += "&ci=" + encodeURIComponent(b.a[0]), c = 1; c < b.a.length; ++c) {
+                                                        var e = "," + encodeURIComponent(b.a[c]);
+                                                        131072 >= a.length + e.length && (a += e)
+                                                    }
+                                                b.g && (e = "&rd=" + encodeURIComponent(JSON.stringify(s())), 131072 >= a.length + e.length && (a += e), d = !0);
+                                                t = a;
+                                                if (d) {
+                                                    c = b.f;
+                                                    b = b.h;
+                                                    var f;
+                                                    if (window.XMLHttpRequest) f = new XMLHttpRequest;
+                                                    else if (window.ActiveXObject) try {
+                                                        f = new ActiveXObject("Msxml2.XMLHTTP")
+                                                    } catch (k) {
+                                                        try {
+                                                            f = new ActiveXObject("Microsoft.XMLHTTP")
+                                                        } catch (u) {}
+                                                    }
+                                                    f && (f.open("POST", c + (-1 == c.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a))
+                                                }
+                                            }
+                                        },
+                                        s = function() {
+                                            var b = {},
+                                                d = document.getElementsByTagName("IMG");
+                                            if (0 == d.length) return {};
+                                            var a = d[0];
+                                            if (!("naturalWidth" in a && "naturalHeight" in a)) return {};
+                                            for (var c = 0; a = d[c]; ++c) {
+                                                var e = a.getAttribute("pagespeed_url_hash");
+                                                e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].k && a.height >= b[e].j) && (b[e] = {
+                                                    rw: a.width,
+                                                    rh: a.height,
+                                                    ow: a.naturalWidth,
+                                                    oh: a.naturalHeight
+                                                })
+                                            }
+                                            return b
+                                        },
+                                        t = "";
+                                    h("pagespeed.CriticalImages.getBeaconData", function() {
+                                        return t
+                                    });
+                                    h("pagespeed.CriticalImages.Run", function(b, d, a, c, e, f) {
+                                        var k = new p(b, d, a, e, f);
+                                        n = k;
+                                        c && m(function() {
+                                            window.setTimeout(function() {
+                                                r(k)
+                                            }, 0)
+                                        })
+                                    });
+                                })();
+                                pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'https://kospro.jp/yukos/', '5Qct1FSuEf', true, false, 'FZfsGSKNxk4');
+                                //]]>
+
+                            </script><img src="./files/qr.png" height="1280" width="1280" pagespeed_url_hash="515058565" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <!-- END.span_6 -->
+                    </div>
+                    <!-- END.row -->
+                </div>
+                <!-- END.topcontents -->
+            </div>
+            <!-- END.topbox -->
+        </div>
+    </div>
+    <!-- END#logobox -->
+
+    <script src="./files/jquery.home.js"></script>
+
+    <main class="sp">
+        <div class="container">
+            <ul class="iphonenav cf sp">
+                <li class="matchHeight" style="height: 83px;">
+                    <a href="https://line.me/ti/p/eyryYSD_Mh">
+                        <section>
+                            <img src="./files/line.png" height="1024" width="1024" pagespeed_url_hash="3622435801" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <p>LINE</p>
+                        </section>
+                    </a>
+                </li>
+                <li class="matchHeight" style="height: 83px;">
+                    <a href="https://www.facebook.com/yoshi1125hisa">
+                        <section>
+                            <img src="./files/facebook.png" alt="Instagram" pagespeed_url_hash="1828141800" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <p>Facebook</p>
+                        </section>
+                    </a>
+                </li>
+                <li class="matchHeight" style="height: 83px;">
+                    <a href="https://twitter.com/yoshi1125hisa" target="_blank">
+                        <section>
+                            <img src="./files/twitter.png" pagespeed_url_hash="1994544082" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <p>Twitter</p>
+                        </section>
+                    </a>
+                </li>
+                <li class="matchHeight" style="height: 83px;">
+                    <a href=" https://valu.is/yoshi1125hisa" target="_blank">
+                        <section>
+                            <img src="./files/wantedly.png" pagespeed_url_hash="3827583136" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <p>Wantedly</p>
+                        </section>
+                    </a>
+                </li>
+                <li class="matchHeight" style="height: 96px;">
+                    <section>
+                        <img src="files/polca.png" pagespeed_url_hash="3712580623" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        <p>Polca</p>
+                    </section>
+
+                </li>
+                <li class="matchHeight" style="height: 96px;">
+                    <a href="https://qiita.com/yoshi1125hisa" target="_blank">
+                        <section>
+                            <img src="./files/qiita.png" pagespeed_url_hash="1414358988" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <p>Qiita</p>
+                        </section>
+                    </a>
+                </li>
+                <li class="matchHeight" style="height: 96px;">
+                    <a href="https://github.com/yoshi1125hisa" target="_blank">
+                        <section>
+                            <img src="./files/github.png" pagespeed_url_hash="1176410109" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <p>GitHub</p>
+                        </section>
+                    </a>
+                </li>
+                <li class="matchHeight" style="height: 96px;">
+                    <a href="https://www.instagram.com/yoshi1125hisa/" target="_blank">
+                        <section>
+                            <img src="./files/instagram.png" pagespeed_url_hash="2422487280" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <p>Instagram</p>
+                        </section>
+                    </a>
+                </li>
+                <li class="matchHeight" style="height: 95px;">
+                    <a href=" https://valu.is/yoshi1125hisa">
+                        <section>
+                            <img src="./files/valu.png" pagespeed_url_hash="1648659836" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <p>VALU</p>
+                        </section>
+                    </a>
+
+                </li>
+                <li class="matchHeight" style="height: 95px;">
+                    <a href="http://mixi.jp/show_profile.pl?id=66375326&from=drawer_menu">
+                        <section>
+                            <img src="./files/mixi.png" pagespeed_url_hash="403513593" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <p>mixi</p>
+                        </section>
+                    </a>
+                </li>
+                <a>
+                    <li class="matchHeight">
+                        <a href="www.linkedin.com/in/yoshi1125hisa">
+                            <section>
+                                <img src="files/linkedin.png">
+                                <p>LinkedIn</p>
+                            </section>
+                        </a>
+                    </li>
+                </a>
+                <li class="matchHeight">
+                    <a href="https://mstdn.jp/web/accounts/430320">
+                        <section>
+                            <img src="files/mstdn.png">
+                            <p>mstdn</p>
+                        </section>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- END.container -->
+    </main>
+
+    <footer id="footer" style="top: 221px; position: relative;">
+        <div class="container">
+            <div class="topnewsbox sp">
+                <div class="topnews">
+                    <h2 style="text-align: center"> About Yoshihisa Kaino:</h2>
+                    <p style="text-align: center"> 兵庫県在住の16歳, 高校2年生(2018年4月1日現在). 1年次を工業高校で過ごし, 校風が合わず2年次よりN高等学校に転入.
+                        <br> 株式会社スカイワードにてスマートフォン用アプリケーション開発やWEBデザインなどを行なっている。
+                        <br> プライベートではハッカソン、プロコンなどに出没。 主な開発言語はRxJava, HTML/CSS , Python3など。
+                    </p>
+                </div>
+                <!-- END.topnews -->
+            </div>
+            <!-- END.topnewsbox -->
+
+            <div class="foothomenav">
+                <ul class="iphonenav cf sp">
+                    <li>
+                        <a href="" target="_blank">
+                            <section>
+                                <img src="./files/profile.png" pagespeed_url_hash="1195355355" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                <p>Profile</p>
+                            </section>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <section>
+                                <img src="./files/skyward.png" height="1024" width="1024" pagespeed_url_hash="902598455" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                <p>Internship</p>
+                            </section>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <section>
+                                <img src="./files/mail.png" height="1024" width="1024" pagespeed_url_hash="77889137" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                <p>Email</p>
+                            </section>
+                        </a>
+                    </li>
+
+                    <li>
+                        <section>
+                            <img src="./files/noimage.png" height="1024" width="1024" pagespeed_url_hash="1414243820" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <p>Coming soon..</p>
+                        </section>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- END.foothomenav -->
+        </div>
+        <!-- END.container -->
+    </footer>
+    <div id="border-t" class="border pc"></div>
+    <div id="border-r" class="border pc"></div>
+    <div id="border-b" class="border pc"></div>
+    <div id="border-l" class="border pc"></div>
+    <script src="./files/jquery.backstretch.min.js"></script>
+    <script>
+        //ここがバックグラウンド
+        $.backstretch(["./files/sky.jpg"], {
+            fade: 1000,
+            duration: 3500
+        });
+
+    </script>
+    <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 823px; width: 411px; z-index: -999999; position: fixed;"><img src="./files/a.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1233.54px; height: 823px; max-height: none; max-width: none; z-index: -999999; left: -411.268px; top: 0px;"></div>
+    <script type="text/javascript">
+        //<![CDATA[
+        var wpcf7 = {
+            "apiSettings": {
+                "root": "https:\/\/kospro.jp\/yukos\/wp-json\/contact-form-7\/v1",
+                "namespace": "contact-form-7\/v1"
+            },
+            "recaptcha": {
+                "messages": {
+                    "empty": "\u3042\u306a\u305f\u304c\u30ed\u30dc\u30c3\u30c8\u3067\u306f\u306a\u3044\u3053\u3068\u3092\u8a3c\u660e\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+                }
+            }
+        };
+        //]]>
+
+    </script>
+    <script type="text/javascript" src="./files/scripts.js"></script>
+    <script type="text/javascript" src="./files/wp-embed.min.js"></script>
+    <style type="text/css">
+        div.fc-scroller {
+            height: auto!important;
+        }
+
+        div.fc-day-grid-container {
+            height: auto!important;
+        }
+
+    </style>
+
+    <div id="wp-a11y-speak-polite" aria-live="polite" aria-relevant="additions text" aria-atomic="true" class="screen-reader-text wp-a11y-speak-region"></div>
+    <div id="wp-a11y-speak-assertive" aria-live="assertive" aria-relevant="additions text" aria-atomic="true" class="screen-reader-text wp-a11y-speak-region"></div>
+    <div style="visibility: hidden; position: absolute; top: 0px;">S</div><iframe id="blockbyte-bs-sidebar" data-pos="right" src="./files/saved_resource.html"></iframe>
+    <div id="blockbyte-bs-indicator" class="blockbyte-bs-fullHeight" style="width: 11px; height: 100%; top: 0%;"></div>
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span>
+
+</html>
