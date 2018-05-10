@@ -551,23 +551,8 @@
     <div id="border-l" class="border pc"></div>
     <script src="./files/jquery.backstretch.min.js"></script>
     <script>
-        // スクロールを無効にする
-        $(window).on('touchmove.noScroll', function(e) {
-            e.preventDefault();
-        });
-
-
-        $(window).load(function() {
-            //画面高さ取得
-            h = $(window).height();
-            $('#container').css('min-height', h + 'px');
-        });
-        $(window).resize(function() {
-            //画面リサイズ時の高さ取得
-            h = $(window).height();
-            $('#container').css('min-height', h + 'px');
-        });
-
+      
+        
         //ここがバックグラウンド
         $.backstretch(["./files/bluetech.png"], {
             fade: 1000,
