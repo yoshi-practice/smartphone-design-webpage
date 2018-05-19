@@ -551,8 +551,6 @@
     <div id="border-l" class="border pc"></div>
     <script src="./files/jquery.backstretch.min.js"></script>
     <script>
-      
-        
         //ここがバックグラウンド
         $.backstretch(["./files/bluetech.png"], {
             fade: 1000,
@@ -574,6 +572,17 @@
         }
 
     </style>
+    <script>
+        $(document).ready(function() {
+            var scrollOff = function(e) {
+                e.preventDefault();
+            }
+            document.addEventListener('touchmove', scrollOff, {
+                passive: false
+            });
+        });
+
+    </script>
 
     <div id="wp-a11y-speak-polite" aria-live="polite" aria-relevant="additions text" aria-atomic="true" class="screen-reader-text wp-a11y-speak-region"></div>
     <div id="wp-a11y-speak-assertive" aria-live="assertive" aria-relevant="additions text" aria-atomic="true" class="screen-reader-text wp-a11y-speak-region"></div>
