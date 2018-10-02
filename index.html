@@ -25,81 +25,22 @@
     <script type="text/javascript" src="./files/mouse.min.js"></script>
     <script type="text/javascript" src="./files/sortable.min.js"></script>
     <script type="text/javascript" src="./files/datepicker.min.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function(jQuery) {
-            jQuery.datepicker.setDefaults({
-                "closeText": "\u9589\u3058\u308b",
-                "currentText": "\u4eca\u65e5",
-                "monthNames": ["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"],
-                "monthNamesShort": ["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"],
-                "nextText": "\u6b21\u3078",
-                "prevText": "\u524d",
-                "dayNames": ["\u65e5\u66dc\u65e5", "\u6708\u66dc\u65e5", "\u706b\u66dc\u65e5", "\u6c34\u66dc\u65e5", "\u6728\u66dc\u65e5", "\u91d1\u66dc\u65e5", "\u571f\u66dc\u65e5"],
-                "dayNamesShort": ["\u65e5", "\u6708", "\u706b", "\u6c34", "\u6728", "\u91d1", "\u571f"],
-                "dayNamesMin": ["\u65e5", "\u6708", "\u706b", "\u6c34", "\u6728", "\u91d1", "\u571f"],
-                "dateFormat": "yy\/mm\/d",
-                "firstDay": 1,
-                "isRTL": false
-            });
-        });
 
-    </script>
     <script type="text/javascript" src="./files/menu.min.js"></script>
     <script type="text/javascript" src="./files/wp-a11y.min.js"></script>
-    <script type="text/javascript">
-        var uiAutocompleteL10n = {
-            "noResults": "\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f\u3002",
-            "oneResult": "1\u4ef6\u306e\u7d50\u679c\u304c\u898b\u3064\u304b\u308a\u307e\u3057\u305f\u3002\u4e0a\u4e0b\u30ad\u30fc\u3092\u4f7f\u3063\u3066\u64cd\u4f5c\u3067\u304d\u307e\u3059\u3002",
-            "manyResults": "%d\u4ef6\u306e\u7d50\u679c\u304c\u898b\u3064\u304b\u308a\u307e\u3057\u305f\u3002\u4e0a\u4e0b\u30ad\u30fc\u3092\u4f7f\u3063\u3066\u64cd\u4f5c\u3067\u304d\u307e\u3059\u3002",
-            "itemSelected": "\u9805\u76ee\u304c\u9078\u629e\u3055\u308c\u307e\u3057\u305f\u3002"
-        };
 
-    </script>
     <script type="text/javascript" src="./files/autocomplete.min.js"></script>
     <script type="text/javascript" src="./files/resizable.min.js"></script>
     <script type="text/javascript" src="./files/draggable.min.js"></script>
     <script type="text/javascript" src="./files/button.min.js"></script>
     <script type="text/javascript" src="./files/dialog.min.js"></script>
-    <script type="text/javascript">
-        var EM = {
-            "firstDay": "1",
-            "locale": "ja",
-            "dateFormat": "yy\/mm\/dd",
-            "show24hours": "1",
-            "is_ssl": "1",
-            "bookingInProgress": "\u4e88\u7d04\u7533\u8fbc\u307f\u304c\u884c\u308f\u308c\u308b\u307e\u3067\u304a\u5f85\u3061\u304f\u3060\u3055\u3044\u3002",
-            "tickets_save": "\u30c1\u30b1\u30c3\u30c8\u3092\u4fdd\u5b58",
-            "bookings_export_save": "\u4e88\u7d04\u60c5\u5831\u306e\u30a8\u30af\u30b9\u30dd\u30fc\u30c8",
-            "bookings_settings_save": "\u8a2d\u5b9a\u3092\u4fdd\u5b58",
-            "booking_delete": "\u672c\u5f53\u306b\u524a\u9664\u3057\u307e\u3059\u304b ?",
-            "booking_offset": "30",
-            "bb_full": "\u58f2\u308a\u5207\u308c",
-            "bb_book": "\u3044\u307e\u3059\u3050\u4e88\u7d04",
-            "bb_booking": "\u4e88\u7d04\u7533\u8fbc\u307f\u3092\u51e6\u7406\u3057\u3066\u3044\u307e\u3059...",
-            "bb_booked": "\u4e88\u7d04\u3092\u7533\u8acb\u3057\u307e\u3057\u305f\u3002",
-            "bb_error": "\u4e88\u7d04\u30a8\u30e9\u30fc\u3067\u3059\u3002\u518d\u8a66\u884c\u3057\u307e\u3059\u304b\uff1f",
-            "bb_cancel": "\u30ad\u30e3\u30f3\u30bb\u30eb",
-            "bb_canceling": "\u30ad\u30e3\u30f3\u30bb\u30eb\u51e6\u7406\u4e2d...",
-            "bb_cancelled": "\u30ad\u30e3\u30f3\u30bb\u30eb\u6e08\u307f",
-            "bb_cancel_error": "\u30ad\u30e3\u30f3\u30bb\u30eb\u30a8\u30e9\u30fc\u3067\u3059\u3002\u518d\u8a66\u884c\u3057\u307e\u3059\u304b\uff1f",
-            "txt_search": "\u691c\u7d22",
-            "txt_searching": "\u691c\u7d22\u4e2d...",
-            "txt_loading": "\u8aad\u307f\u8fbc\u307f\u4e2d...",
-            "event_detach_warning": "\u7e70\u8fd4\u3057\u30a4\u30d9\u30f3\u30c8\u304b\u3089\u5207\u308a\u96e2\u3059\u3068\u3001\u305d\u306e\u30a4\u30d9\u30f3\u30c8\u306f\u7e70\u8fd4\u3057\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb\u304b\u3089\u9664\u5916\u3055\u308c\u3001\u72ec\u7acb\u3057\u305f\u30a4\u30d9\u30f3\u30c8\u3068\u3057\u3066\u6271\u308f\u308c\u307e\u3059\u3002\u672c\u5f53\u306b\u3053\u306e\u30a4\u30d9\u30f3\u30c8\u3092\u7e70\u8fd4\u3057\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb\u304b\u3089\u5207\u308a\u96e2\u3057\u307e\u3059\u304b?",
-            "delete_recurrence_warning": "\u672c\u5f53\u306b\u3053\u306e\u30a4\u30d9\u30f3\u30c8\u306e\u7e70\u8fd4\u3057\u3092\u5168\u524a\u9664\u3057\u3066\u3088\u308d\u3057\u3044\u3067\u3059\u304b? \u3059\u3079\u3066\u306e\u30a4\u30d9\u30f3\u30c8\u3092\u30b4\u30df\u7bb1\u3078\u79fb\u52d5\u3057\u307e\u3057\u305f\u3002",
-            "disable_bookings_warning": "\u4e88\u7d04\u6a5f\u80fd\u3092\u7121\u52b9\u306b\u3057\u3066\u300c\u66f4\u65b0\u300d\u3092\u62bc\u3059\u3068\u3001\u73fe\u5728\u306e\u4e88\u7d04\u60c5\u5831\u304c\u3059\u3079\u3066\u5931\u308f\u308c\u307e\u3059\u3002\u73fe\u5728\u4e88\u7d04\u3092\u53d7\u4ed8\u4e2d\u306e\u30a4\u30d9\u30f3\u30c8\u306e\u5834\u5408\u3001\u3053\u306e\u64cd\u4f5c\u306f\u305f\u3044\u3078\u3093\u5371\u967a\u3067\u3059\u3002\u4e88\u7d04\u60c5\u5831\u306f\u305d\u306e\u307e\u307e\u3067\u3001\u65b0\u898f\u306e\u7533\u8fbc\u3092\u5236\u9650\u3059\u308b\u306b\u306f\u3001\u30c1\u30b1\u30c3\u30c8\u306e\u300c\u5e2d\u6570\u300d\u3084\u30a4\u30d9\u30f3\u30c8\u306e\u300c\u7dcf\u5e2d\u6570\u300d\u3092\u4e88\u7d04\u6e08\u307f\u306e\u5e2d\u6570\u3088\u308a\u5c11\u306a\u304f\u8a2d\u5b9a\u3057\u76f4\u305b\u3070\u5229\u7528\u8005\u306f\u4e88\u7d04\u7533\u8fbc\u307f\u304c\u3067\u304d\u306a\u304f\u306a\u308b\u305f\u3081\u3001\u3053\u3061\u3089\u306e\u65b9\u6cd5\u304c\u304a\u3059\u3059\u3081\u3067\u3059\u3002\u672c\u5f53\u306b\u4e88\u7d04\u6a5f\u80fd\u3092\u7121\u52b9\u306b\u3057\u3066\u3088\u308d\u3057\u3044\u3067\u3059\u304b?",
-            "booking_warning_cancel": "\u672c\u5f53\u306b\u4e88\u7d04\u3092\u30ad\u30e3\u30f3\u30bb\u30eb\u3057\u3066\u3088\u3044\u3067\u3059\u304b?"
-        };
-        //]]>
 
-    </script>
     <script type="text/javascript" src="./files/events-manager.js"></script>
     <script src="./files/jquery.matchHeight-min.js"></script>
     <script>
         $(function() {
             $('.matchHeight').matchHeight();
         });
-
     </script>
     <style class="blockbyte-bs-style" data-name="content">
         body>div#blockbyte-bs-indicator>div {
@@ -217,7 +158,6 @@
             background: rgba(0, 0, 0, 0.5) !important;
             transition: opacity 0.3s
         }
-
     </style>
 </head>
 
@@ -372,7 +312,6 @@
                                 })();
                                 pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'https://kospro.jp/yukos/', '5Qct1FSuEf', true, false, 'FZfsGSKNxk4');
                                 //]]>
-
                             </script><img src="./files/qr.png" height="1280" width="1280" pagespeed_url_hash="515058565" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                         </div>
 
@@ -495,11 +434,8 @@
         <div class="container">
             <div class="topnewsbox sp">
                 <div class="topnews">
-                    <h2 style="text-align: center"> About Yoshihisa Kaino:</h2>
-                    <p style="text-align: center"> 兵庫県在住の16歳, 高校2年生.<br>工業高校からN高等学校へ
-                        <br> 株式会社スカイワード インターンシップエンジニア
-                        <br>主な開発言語はRxJava, Dartなど<br> Slackの招待、お仕事の依頼などは
-                        <a href="mailto:yoppy1125yoppy@gmail.com">Email</a>まで
+                    <h2 style="text-align: center">yoshi's SNS</h2>
+                    <p style="text-align: center">
                     </p>
                 </div>
                 <!-- END.topnews -->
@@ -541,9 +477,8 @@
                     </li>
                 </ul>
             </div>
-            <!-- END.foothomenav -->
+
         </div>
-        <!-- END.container -->
     </footer>
     <div id="border-t" class="border pc"></div>
     <div id="border-r" class="border pc"></div>
@@ -556,7 +491,6 @@
             fade: 1000,
             duration: 3500
         });
-
     </script>
     <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 823px; width: 411px; z-index: -999999; position: fixed;"><img src="./files/a.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1233.54px; height: 823px; max-height: none; max-width: none; z-index: -999999; left: -411.268px; top: 0px;"></div>
 
@@ -570,7 +504,6 @@
         div.fc-day-grid-container {
             height: auto!important;
         }
-
     </style>
     <script>
         $(document).ready(function() {
@@ -581,7 +514,6 @@
                 passive: false
             });
         });
-
     </script>
 
     <div id="wp-a11y-speak-polite" aria-live="polite" aria-relevant="additions text" aria-atomic="true" class="screen-reader-text wp-a11y-speak-region"></div>
